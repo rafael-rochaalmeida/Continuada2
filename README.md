@@ -9,19 +9,25 @@ SENHAS VÁLIDAS
 MARKETING
 
 Usuario: Marketing
+
 Login: marketing@outlook.com
+
 Senha: mkt123
 ____________
 
 FINANCEIRO
 
 Usuário: Financeiro
+
 Login: financeiro@outlook.com
+
 Senha: fin123
 ____________
 
 COMERCIAL 
 
 Usuário: Comercial
+
 Login: comercial@outlook.com
+
 senha: com123
