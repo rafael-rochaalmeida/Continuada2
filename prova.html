@@ -9,14 +9,14 @@
 </head>
 
 <body>
-        <!-- INICIO HEADER -->
-        <div class="header">
-            <h1>Continuada 2</h1>
-        </div>
-        <!-- FIM HEADER -->
+    <!-- INICIO HEADER -->
+    <div class="header">
+        <h1>Continuada 2</h1>
+    </div>
+    <!-- FIM HEADER -->
 
-        <!-- INICIO CONTAINER LOGIN -->
-        <div class="container-main">
+    <!-- INICIO CONTAINER LOGIN -->
+    <div class="container-main">
         <div class="container-login">
             <img src="img/avatar.png" alt="">
             <div id="campos">
@@ -45,7 +45,7 @@
         <!-- FIM CONTAINER LOGIN -->
 
     </div>
-    
+
 </body>
 
 </html>
@@ -54,36 +54,34 @@
 
 <script>
     var contador = 3;
-    function login_sistema(){
-        mensagem.innerHTMl = '';
+    function login_sistema() {
+        mensagem.innerHTML = '';    
         var user = Number(combo_user.value);
         var email = email_login.value;
         var password2 = password.value;
-        if(password2 == "mkt123" &&  email == "marketing@outlook.com" && user == 1){
+        if(password2 == "mkt123" && email == "marketing@outlook.com" && user == 1) {
             contador = 3;
             mensagem.innerHTML = `<span style="color: #3498db;"> Olá, ${email} !. Você entrou com o perfil Marketing</span><br>  <img src="img/mkt.png">`;
-        } else if(password2 == "com123" &&  email == "comercial@outlook.com" && user == 2){
+        } else if(password2 == "com123" && email == "comercial@outlook.com" && user == 2) {
             contador = 3;
             mensagem.innerHTML = `<span style="color: #3498db;">  Olá, ${email} !. Você entrou com o perfil Comercial</span><br>  <img src="img/comercial.png">`;
-            
-        } else if(password2 == "fin123" &&  email == "financeiro@outlook.com" && user == 3){
+
+        } else if(password2 == "fin123" && email == "financeiro@outlook.com" && user == 3) {
             contador = 3;
             mensagem.innerHTML = `<span style="color: #3498db;"> Olá, ${email} !. Você entrou com o perfil Financeiro</span><br>  <img src="img/financeiro.png">`;
 
-        } 
-        else if(contador == 1) {
+        } else if(contador == 1){
             campos.style.display = 'none';
             mensagem.innerHTML = 'Acesso bloqueado! Entre em contato com o suporte';
-            
-        } else{
+
+        }else{
             contador--;
             mensagem.innerHTML = `<span style="color: red;"> Falha de autenticação! Você tem mais ${contador} tentativa(s)!</span>`;
         };
     };
-
     function limpar_campos() {
         email_login.value = '';
         password.value = '';
-    }
+    };
 
 </script>
